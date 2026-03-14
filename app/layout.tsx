@@ -13,34 +13,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Amity University Online – Admissions Open",
-  description:
-    "Apply for online MBA, MCA, BBA and more at Amity University. Limited seats – admission closes March 25.",
-
   openGraph: {
-    title: "Amity University Online – Admissions Open",
-    description:
-      "Apply for online MBA, MCA, BBA and more. Limited seats – admission closes March 25.",
-    url: "https://yourdomain.com",
-    siteName: "Amity Online",
+    url: "https://amitylastdate.vercel.app",
+    type: "website",
     images: [
       {
-        url: "/banner.png", // banner image in public folder
+        url: "https://amitylastdate.vercel.app/banner.png",
         width: 1200,
         height: 630,
-        alt: "Amity University Online Admission",
+        alt: "Amity Admission",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Amity University Online – Admissions Open",
-    description:
-      "Apply for online MBA, MCA, BBA and more at Amity University.",
-    images: ["/banner.png"],
+    images: ["https://amitylastdate.vercel.app/banner.png"],
   },
 };
 
@@ -51,9 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
